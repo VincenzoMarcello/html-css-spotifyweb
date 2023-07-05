@@ -68,9 +68,28 @@ header {
   opacity: 0.6;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 300px;
   right: 0;
   z-index: 10;
+}
+
+header {
+  align-items: center;
+  padding-right: 20px;
+}
+
+.button-header {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 40px;
+  border-radius: 3rem;
+}
+
+.button-header:hover {
+  transform: scale(1.2);
 }
 
 /*
