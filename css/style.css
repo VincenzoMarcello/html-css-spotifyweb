@@ -1,3 +1,10 @@
+:root {
+  /* SITE COLOR */
+  --bg-top: #141922;
+  --bg-aside: #000000;
+  --bg-footer: #282828;
+}
+
 /*
 ! *************************
 !    RESET AND GENERICS   *
@@ -12,4 +19,23 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-top {
+  height: calc(100vh - 100px);
+  background-color: var(--bg-top);
+}
+
+footer {
+  height: 100px;
+  background-color: var(--bg-footer);
+}
+
+.content-top {
+  display: flex;
+}
+
+.col-l {
+  width: 300px;
+  background-color: var(--bg-aside);
 }
