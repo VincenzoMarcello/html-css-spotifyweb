@@ -39,3 +39,42 @@ footer {
   width: 300px;
   background-color: var(--bg-aside);
 }
+
+/*
+! *************************
+!           UTILS         *
+! *************************
+*/
+
+.flex {
+  display: flex;
+}
+
+.f-end {
+  justify-content: flex-end;
+}
+
+/*
+! *************************
+!       SECTION SITE      *
+! *************************
+*/
+
+/* ? HEADER */
+
+header {
+  height: 100px;
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/*
+! *************************
+!        RESPONSIVE       *
+! *************************
+*/
