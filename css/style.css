@@ -210,11 +210,117 @@ h4 {
 .image-container:hover .image {
   filter: brightness(0.7);
 }
-
+/* ? GRID SECTION TWO */
 /* ? GRID SECTION THREE */
 
 .image.image-circle {
   border-radius: 50%;
+}
+
+/* ? PLAYER */
+
+.icons-left {
+  padding: 0 10px;
+}
+
+.fa-folder {
+  padding-right: 10px;
+}
+
+#player {
+  display: flex;
+  justify-content: space-between;
+}
+
+#player .player-col {
+  padding: 0.5rem;
+}
+
+#player .player-col.song-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#player .song-pic {
+  width: 70px;
+  height: 70px;
+}
+
+.song-controls-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 50%;
+}
+
+#player .song-bar > div {
+  display: flex;
+  align-items: center;
+}
+
+#player .song-bar {
+  display: flex;
+  gap: 1rem;
+  height: 50%;
+}
+
+#player .progress-bar-container {
+  flex-grow: 1;
+}
+
+.progress-bar {
+  display: block;
+  width: 280px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--text-off);
+}
+
+.progress-bar.small {
+  display: block;
+  width: 100px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--text-off);
+}
+
+.progress-bar > .progress {
+  display: block;
+  height: 3px;
+  background-color: var(--text-on);
+  border-radius: 2px;
+  width: 30%;
+}
+
+.progress-bar > .progress {
+  display: block;
+  height: 3px;
+  background-color: var(--text-on);
+  border-radius: 2px;
+  width: 30%;
+
+  position: relative;
+}
+
+.progress > .progress-ball {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: none;
+}
+
+.settings-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /*
@@ -240,6 +346,22 @@ h4 {
   .col {
     width: calc(100% / 2);
   }
+
+  .progress-bar {
+    width: 180px;
+  }
+
+  .progress-bar.small {
+    width: 70px;
+  }
+
+  .settings-controls {
+    flex-wrap: wrap;
+  }
+
+  #player .player-col.song-info {
+    gap: 0.5rem;
+  }
 }
 
 /* ? EXTRASMALL*/
@@ -247,5 +369,17 @@ h4 {
 @media screen and (max-width: 576px) {
   #nav-menu {
     width: 50px;
+  }
+
+  .progress-bar {
+    width: 100px;
+  }
+
+  .progress-bar.small {
+    width: 50px;
+  }
+
+  .song-controls-icons {
+    gap: 1rem;
   }
 }
