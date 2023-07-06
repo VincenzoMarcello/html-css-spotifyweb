@@ -22,7 +22,77 @@
     <!-- MAIN -->
     <main class="content-top">
       <!-- NAVBAR -->
-      <nav id="nav-menu"></nav>
+      <nav id="nav-menu">
+        <!-- NAV-TOP -->
+        <section class="nav-top">
+          <!-- LOGO -->
+          <div class="logo-container">
+            <img src="img/logo.svg" class="logo" alt="logo" />
+            <img src="img/logo-small.svg" class="logo-small" alt="small" />
+          </div>
+
+          <!-- ICONE NAV-TOP -->
+          <div class="img-container">
+            <div class="flex gap box-s">
+              <img src="img/home.svg" class="img-icon" alt="home" />
+              <h4>Home</h4>
+            </div>
+            <div class="flex gap box-s">
+              <img src="img/search.svg" class="img-icon" alt="search" />
+              <h4>Cerca</h4>
+            </div>
+            <div class="flex gap box-s">
+              <img src="img/libreria.svg" class="img-icon" alt="libreria" />
+              <h4>La tua libreria</h4>
+            </div>
+          </div>
+
+          <!-- PLAYLIST -->
+          <h3>PLAYLIST</h3>
+
+          <div class="flex new-playlist">
+            <span class="plus">+</span>
+            <h4>Crea Playlist</h4>
+          </div>
+
+          <ul>
+            <li>
+              <h4>Nome Playlist</h4>
+            </li>
+            <li>
+              <h4>Nome Playlist</h4>
+            </li>
+            <li>
+              <h4>Nome Playlist</h4>
+            </li>
+            <li>
+              <h4>Nome Playlist</h4>
+            </li>
+            <li>
+              <h4>Nome Playlist</h4>
+            </li>
+            <li>
+              <h4>Nome Playlist</h4>
+            </li>
+            <li>
+              <h4>Nome Playlist</h4>
+            </li>
+          </ul>
+        </section>
+
+        <!-- NAV-BOTTOM -->
+        <section class="nav-bottom">
+          <div class="flex align-c gap">
+            <span><i class="fa-regular fa-circle-down"></i></span>
+            <h4>Installa app</h4>
+          </div>
+          <hr />
+          <div class="flex align-c gap">
+            <img src="img/profile.svg" class="profile-img" alt="" />
+            <h3>John Doe</h3>
+          </div>
+        </section>
+      </nav>
 
       <!-- MAIN SECTION -->
       <section id="main-section">
@@ -47,6 +117,7 @@
         <section class="grid-section">
           <h2 class="title-2">Recently played</h2>
           <div class="row flex container">
+            <!-- COL ONE -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -64,6 +135,8 @@
                 <h4>Subtitle</h4>
               </div>
             </div>
+
+            <!-- COL TWO -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -79,6 +152,8 @@
                 <h4>Kyle Dixon & Michael Stein</h4>
               </div>
             </div>
+
+            <!-- COL THREE -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -96,6 +171,8 @@
                 <h4>Subtitle</h4>
               </div>
             </div>
+
+            <!-- COL FOUR -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -109,6 +186,8 @@
                 <h4>Subtitle</h4>
               </div>
             </div>
+
+            <!-- COL FIVE -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -122,6 +201,8 @@
                 <h4>Subtitle</h4>
               </div>
             </div>
+
+            <!-- COL SIX -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -143,6 +224,7 @@
           <h2 class="title-2">Creato per John Doe</h2>
           <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
           <div class="row flex container">
+            <!-- COL ONE -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -155,6 +237,8 @@
                 <h3>Release Radar</h3>
               </div>
             </div>
+
+            <!-- COL TWO -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -175,6 +259,7 @@
           <h2 class="title-2">Artisti più popolari</h2>
           <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
           <div class="row flex container">
+            <!-- COL ONE -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -191,6 +276,8 @@
                 <h3>Lana del Rey</h3>
               </div>
             </div>
+
+            <!-- COL TWO -->
             <div class="col">
               <div class="card">
                 <div class="image-container">
@@ -214,6 +301,7 @@
 
     <!-- FOOTER -->
     <footer id="player">
+      <!-- SONG-INFO -->
       <div class="player-col song-info">
         <img src="img/sinister.jpeg" class="song-pic" alt="sinister" />
         <div class="text-footer">
@@ -225,6 +313,8 @@
           <i class="fa-regular fa-folder"></i>
         </div>
       </div>
+
+      <!-- SONG-CONTROLS -->
       <div class="player-col song-controls">
         <div class="song-controls-icons">
           <i class="fa-solid fa-shuffle"> </i
@@ -233,8 +323,10 @@
           <i class="fa-solid fa-forward-step"></i>
           <i class="fa-solid fa-rotate-right"></i>
         </div>
+
+        <!-- SONG-BAR -->
         <div class="song-bar">
-          <div>0:25</div>
+          <div class="minutes">0:25</div>
           <div class="progress-bar-container">
             <span class="progress-bar">
               <span class="progress">
@@ -242,9 +334,11 @@
               </span>
             </span>
           </div>
-          <div>4:35</div>
+          <div class="minutes">4:35</div>
         </div>
       </div>
+
+      <!-- SETTINGS-CONTROLS -->
       <div class="player-col settings-controls">
         <i class="fa-solid fa-list"></i>
         <i class="fa-solid fa-desktop"></i>
