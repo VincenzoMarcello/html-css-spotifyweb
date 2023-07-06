@@ -5,6 +5,7 @@
   --bg-footer: #282828;
   --text-off: #5b5f64;
   --text-on: #ffffff;
+  --text-green: #57fb26;
 }
 
 /*
@@ -223,8 +224,32 @@ h4 {
   padding: 0 10px;
 }
 
-.fa-folder {
+.icons-left i {
+  color: var(--text-off);
+}
+
+.icons-left i:hover {
+  color: var(--text-on);
+  cursor: pointer;
+}
+
+.fa-heart {
   padding-right: 10px;
+}
+
+#player h3 {
+  padding-bottom: 3px;
+}
+
+#player h4:hover {
+  color: var(--text-on);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#player .fa-2x:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 #player {
@@ -292,6 +317,18 @@ h4 {
   background-color: var(--text-on);
   border-radius: 2px;
   width: 30%;
+}
+
+.progress-bar:hover {
+  cursor: pointer;
+}
+
+.progress-bar:hover .progress {
+  background-color: var(--text-green);
+}
+
+.progress-bar:hover .progress-ball {
+  display: block;
 }
 
 .progress-bar > .progress {
