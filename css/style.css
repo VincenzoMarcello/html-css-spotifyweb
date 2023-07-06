@@ -3,7 +3,8 @@
   --bg-top: #141922;
   --bg-aside: #000000;
   --bg-footer: #282828;
-  --text-off: #474b51;
+  --text-off: #5b5f64;
+  --text-on: #ffffff;
 }
 
 /*
@@ -37,10 +38,9 @@ img {
   max-width: 100%;
 }
 
-p {
+h4 {
   color: var(--text-off);
   font-size: 0.8rem;
-  font-weight: 600;
 }
 
 .content-top {
@@ -52,14 +52,13 @@ p {
   background-color: var(--bg-aside);
 }
 
-header + * {
-  padding-top: 100px;
-}
-
 .row {
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .col {
+  width: calc(100% / 6);
   padding: 1rem;
 }
 
@@ -99,7 +98,7 @@ header + * {
 /* ? MAIN SECTION */
 
 #main-section {
-  width: calc(100% - 300px);
+  width: 100%;
   overflow: auto;
 }
 
@@ -107,11 +106,10 @@ header + * {
 
 header {
   height: 100px;
-  background-color: black;
-  opacity: 0.6;
-  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: sticky;
   top: 0;
-  left: 300px;
+  left: 0;
   right: 0;
   z-index: 10;
 }
@@ -124,16 +122,16 @@ header {
 .button-header {
   text-decoration: none;
   font-size: 0.7rem;
-  color: white;
+  color: #ffffff;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   padding: 10px 40px;
   border-radius: 3rem;
   font-weight: 800;
 }
 
 .button-header:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* ? EVIDENCE-MENU */
@@ -152,10 +150,24 @@ a {
   padding: 10px 5px;
 }
 
+.evidence-link li,
+a:hover {
+  color: var(--text-on);
+}
+
 /* ? GRID SECTION */
 
 .grid-section {
   padding: 0 1rem;
+}
+
+.grid-section h2 {
+  padding: 1rem 0;
+}
+
+.grid-section h3,
+h4 {
+  padding: 5px 0;
 }
 
 .card {
@@ -164,6 +176,45 @@ a {
 
 .card h3 {
   font-size: 1rem;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay i {
+  font-size: 50px;
+  color: white;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container:hover .image {
+  filter: brightness(0.7);
+}
+
+/* ? GRID SECTION THREE */
+
+.image.image-circle {
+  border-radius: 50%;
 }
 
 /*
@@ -177,14 +228,24 @@ a {
   .row {
     flex-wrap: wrap;
   }
+
+  .col {
+    width: calc(100% / 4);
+  }
 }
 
 /* ? SMALL*/
 
 @media screen and (max-width: 768px) {
+  .col {
+    width: calc(100% / 2);
+  }
 }
 
 /* ? EXTRASMALL*/
 
 @media screen and (max-width: 576px) {
+  #nav-menu {
+    width: 50px;
+  }
 }
