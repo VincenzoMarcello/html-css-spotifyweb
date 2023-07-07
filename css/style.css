@@ -124,6 +124,7 @@ hr {
   height: calc(100vh - 100px);
   padding: 0.5rem 1rem;
   background-color: var(--bg-aside);
+  overflow: auto;
 }
 
 .logo-container {
@@ -185,7 +186,7 @@ hr {
 }
 
 #nav-menu li {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 #nav-menu h3 {
@@ -195,6 +196,7 @@ hr {
 #nav-menu ul {
   max-height: calc(100vh - 520px);
   overflow: auto;
+  min-height: 115px;
 }
 
 .box-s {
